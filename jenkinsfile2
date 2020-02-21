@@ -10,7 +10,7 @@ pipeline {
         }
       steps {
         sh 'ls'
-        sh 'env'
+        sh 'env'   //env or printenv, both will print all env variables
         sh 'pwd'
        }
      }
