@@ -1,13 +1,20 @@
 pipeline {
   agent any
+  environment {
+    USERNAME = 'keshav'
+    }
   stages {
-    stage('Build'){
-      steps{
+    stage('Build') {
+      environment {
+        API_KEY = 'ISCP123'
+        }
+      steps {
         sh 'ls'
+        sh 'printenv'
         sh 'pwd'
        }
      }
-    stage('deploy'){
+    stage('deploy') {
       steps{
         print "hello world"
        }
