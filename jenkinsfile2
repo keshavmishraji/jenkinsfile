@@ -1,0 +1,16 @@
+pipeline {
+  agent any
+  stages {
+    stage('Build'){
+      steps{
+        sh 'ls'
+        sh 'pwd'
+       }
+     }
+    stage('deploy'){
+      steps{
+        sh 'echo "hello world"'
+       }
+      }
+     }
+    }
