@@ -1,6 +1,15 @@
 node {
-  def i = '1'
-    stage "stage #" + 1
-    print 'hello world'
-    git ''
-    sh 'ls'
+        def i = '1'
+            stage "Stage #" + i
+            print 'hello world !'
+            
+            git "https://github.com/keshavmishraji/testingcode.git"
+            sh 'ls'
+            
+            stage "Stage #" + i
+            print 'hello world !'
+            
+            git "https://github.com/keshavmishraji/testingcode.git"
+            sh 'ls'
+            sh 'pwd'
+}
