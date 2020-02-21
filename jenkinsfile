@@ -3,6 +3,7 @@ node {
             stage "Stage #" + i
             print 'hello world !'
             
+            checkout scm
             git "https://github.com/keshavmishraji/testingcode.git"
             sh 'ls'
 }
