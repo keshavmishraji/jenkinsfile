@@ -1,1 +1,6 @@
-
+node {
+  def i = '1'
+    stage "stage #" + 1
+    print 'hello world'
+    git ''
+    sh 'ls'
